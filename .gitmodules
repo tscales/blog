@@ -1,0 +1,7 @@
+[submodule "themes/hugo-bearblog"]
+	path = themes/hugo-bearblog
+	url = git@github.com:janraasch/hugo-bearblog.git
+[submodule "public"]
+	path = public
+	url = git@github.com:tscales/tscales.github.io.git
+	branch = main

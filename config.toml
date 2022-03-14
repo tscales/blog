@@ -1,0 +1,4 @@
+baseURL = 'https://tscales.github.io/'
+languageCode = 'en-us'
+title = 'Ty Scales'
+theme = 'hugo-bearblog'
