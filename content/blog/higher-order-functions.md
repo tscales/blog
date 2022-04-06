@@ -34,11 +34,11 @@ What if instead of 3 fields in your `User` class, you have 20?
 With a higher order function, these extra classes can be avoided all together. Instead of a returning a `UserWithoutAddress`, we can return a function `String => User` that will complete the User for us once we obtain the address at a later time.
 
 ```scala
-def getUserWithoutAddress(id: String): String => User = {
+def getUserWithoutAddress(): String => User = {
     User("foo", "bar", _)
 }
 
-val partialUser: String => User = getUserWithoutAddress(1)
+val partialUser: String => User = getUserWithoutAddress()
 val user: User = partialUser("123 main st")
 ```
 
